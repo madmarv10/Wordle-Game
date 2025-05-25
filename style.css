@@ -1,0 +1,91 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#round-info {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  min-height: 360px; /* enough space for 6 guesses */
+}
+
+.tile {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px solid #ccc;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.correct {
+  background-color: #6aaa64;
+  color: white;
+  border-color: #6aaa64;
+}
+
+.present {
+  background-color: #c9b458;
+  color: white;
+  border-color: #c9b458;
+}
+
+.absent {
+  background-color: #787c7e;
+  color: white;
+  border-color: #787c7e;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+#guess-input {
+  padding: 10px;
+  font-size: 18px;
+  width: 200px;
+  text-transform: uppercase;
+}
+
+#submit-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#submit-btn:hover {
+  background-color: #555;
+}
+
+#message {
+  font-size: 1.1em;
+  margin-top: 10px;
+  min-height: 30px;
+}
